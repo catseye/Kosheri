@@ -1,0 +1,10 @@
+syntax: glob
+
+*.o
+*.a
+*.exe
+instrenum.h
+instrlab.h
+instrtab.c
+localtypes.h
+
