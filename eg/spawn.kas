@@ -1,0 +1,13 @@
+NEW_AR #7
+SPAWN :label
+REST
+PUSH #main
+STDOUT
+PORTRAY
+HALT
+:label
+NEW_AR #7
+PUSH #worker
+STDOUT
+PORTRAY
+HALT

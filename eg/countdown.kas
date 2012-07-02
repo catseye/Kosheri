@@ -1,0 +1,14 @@
+NEW_AR #3
+PUSH #11	; statically initialize our local
+:label
+GETI #0
+STDOUT
+PORTRAY
+GETI #0
+PUSH #1
+SUB_INT
+SETI #0
+GETI #0
+PUSH #0
+JNE :label
+HALT

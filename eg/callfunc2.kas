@@ -1,0 +1,37 @@
+NEW_AR #10
+GOTO :past_q
+:q
+			; no need to reserve space for parameters
+GETI #0		; local #0 = 1st parameter = a
+STDOUT
+PORTRAY
+
+GETI #1		; local #1 = 2nd parameter = b
+STDOUT
+PORTRAY
+
+GETI #0
+GETI #1
+ADD_INT
+
+YIELD #1		; pass the result back to our caller
+RET			; end of this function
+
+:past_q
+
+PUSH #1
+
+PUSH #2
+PUSH #3
+PUSH #10		; this function will need 4 slots: 2 args, 2 stack
+FUN :q		; push a closure for q onto the stack
+CALL #2		; call it with two args
+
+PUSH #10		; this function will need 4 slots: 2 args, 2 stack
+FUN :q		; push a closure for q onto the stack
+CALL #2		; call it with two args
+
+STDOUT
+PORTRAY
+
+HALT
