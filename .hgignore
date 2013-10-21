@@ -8,3 +8,12 @@ instrlab.h
 instrtab.c
 localtypes.h
 
+syntax: regexp
+
+^src/assemble
+^src/buildinfo
+^src/disasm
+^src/freeze
+^src/geninstr
+^src/run
+^src/thaw

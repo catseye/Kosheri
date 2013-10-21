@@ -1,0 +1,14 @@
+*.o
+*.a
+*.exe
+instrenum.h
+instrlab.h
+instrtab.c
+localtypes.h
+src/assemble
+src/buildinfo
+src/disasm
+src/freeze
+src/geninstr
+src/run
+src/thaw
