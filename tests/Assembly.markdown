@@ -1,10 +1,10 @@
 Kosheri Assembly
 ================
 
--> Functionality "Round-trip Kosheri Assembly" is implemented by shell command
--> "./assemble --asmfile %(test-file) --vmfile foo.kvm && ./disasm --vmfile foo.kvm --asmfile %(output-file)"
-
--> Tests for functionality "Round-trip Kosheri Assembly"
+    -> Functionality "Round-trip Kosheri Assembly" is implemented by shell command
+    -> "./assemble --asmfile %(test-file) --vmfile foo.kvm && ./disasm --vmfile foo.kvm --asmfile %(output-file)"
+    
+    -> Tests for functionality "Round-trip Kosheri Assembly"
 
     | NEW_AR #10
     | GOTO :past_q
@@ -116,10 +116,10 @@ You can include literal terms of all kinds in an assembly file.
     = HALT 
     = 
 
--> Functionality "Run Kosheri Assembly" is implemented by shell command
--> "./assemble --asmfile %(test-file) --vmfile foo.kvm >/dev/null 2>&1 && ./run --vmfile foo.kvm"
-
--> Tests for functionality "Run Kosheri Assembly"
+    -> Functionality "Run Kosheri Assembly" is implemented by shell command
+    -> "./assemble --asmfile %(test-file) --vmfile foo.kvm >/dev/null 2>&1 && ./run --vmfile foo.kvm"
+    
+    -> Tests for functionality "Run Kosheri Assembly"
 
 Hello, world-ing
 ----------------
