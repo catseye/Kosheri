@@ -2,8 +2,8 @@ Kosheri Terms
 =============
 
     -> Functionality "Freeze and Thaw Kosheri Term" is implemented by shell command
-    -> "./freeze --termfile %(test-file) --binfile foo.bin && ./thaw --binfile foo.bin --termfile %(output-file)"
-    
+    -> "./freeze --termfile %(test-body-file) --binfile foo.bin && ./thaw --binfile foo.bin --termfile %(output-file)"
+
     -> Tests for functionality "Freeze and Thaw Kosheri Term"
 
 Freeze and thaw a well-formed, complex term.
